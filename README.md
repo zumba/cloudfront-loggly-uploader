@@ -29,9 +29,9 @@ cd build/
 
 ## Running
 
-Utility was meant to be run in two ways: Either single use, or as a daemon.
+Utility can be ran either in batch or daemon mode.
 
-For single use just run:
+To run in batch mode (runs once and exits after processing all files in bucket):
 
 ```shell
 cloudfront-loggly-uploader -configFile cloudfront-loggly-uploader.conf.yaml
