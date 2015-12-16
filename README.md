@@ -19,7 +19,7 @@ GOOS=linux go build
 
 ## Creating RPM or Debian packages
 
-This will create an RPM and Debian package of the built binary in the `./build` directory.
+Creates an RPM and Debian package of the built binary. This uses [fpm](https://github.com/jordansissel/fpm) to create the packages.
 
 ```shell
 go build
