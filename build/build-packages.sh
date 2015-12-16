@@ -32,6 +32,7 @@ fpm -s dir \
   --url="${URL}" \
   --category Network \
   --description "Download AWS CloudFront logs from S3 and upload them to Loggly" \
+  --rpm-os="linux" \
   -a "${TARGET_ARCH}" \
   -C "${BUILD}" \
   --config-files "etc/cloudfront-loggly-uploader.conf.yaml" \
