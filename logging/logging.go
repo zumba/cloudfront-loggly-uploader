@@ -1,13 +1,9 @@
 package logging
 
 import (
-	"io"
 	"io/ioutil"
 	"log"
 )
-
-// LogOutputWriter is where logs will be written to
-var LogOutputWriter io.Writer
 
 // DebugLogger is a logger that's enabled conditionally when needed
 // for debugging.
