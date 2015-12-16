@@ -1,0 +1,65 @@
+{
+	"ImportPath": "github.com/zumba/cloudfront-loggly-uploader",
+	"GoVersion": "go1.5.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/aws",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/endpoints",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/query",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/signer/v4",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/private/waiter",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/aws/aws-sdk-go/service/s3",
+			"Comment": "v1.0.3",
+			"Rev": "d4677067b535e7a06201ce491b41f4b73dcc73a9"
+		},
+		{
+			"ImportPath": "github.com/go-ini/ini",
+			"Comment": "v0-62-g65f8c74",
+			"Rev": "65f8c749131183c3b34fcb87d6f79b958d3318c7"
+		},
+		{
+			"ImportPath": "github.com/jmespath/go-jmespath",
+			"Comment": "0.2.2",
+			"Rev": "3433f3ea46d9f8019119e7dd41274e112a2359a9"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "f7716cbe52baa25d2e9b0d0da546fcf909fc16b4"
+		}
+	]
+}
