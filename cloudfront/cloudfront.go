@@ -218,26 +218,28 @@ func (p *Processor) ProcessLogsInBucket() {
 
 		compressedContent, err := p.GetS3FileContent(s3File)
 		if err != nil {
-			log.Printf("Unable to get S3 file content for file %s %v", s3File, err)
+			log.Printf("Error getting S3 content for file %s: %v", s3File, err)
+			continue
 		}
 
 		uncompressedContent, err := UncompressS3File(compressedContent)
 		if err != nil {
-			log.Printf("Unable to uncompress %s %v", s3File, err)
+			log.Printf("Error uncompressing file %s: %v", s3File, err)
+			continue
 		}
 
 		err = p.processCloudFrontLogFile(uncompressedContent)
 
 		if err != nil {
-			log.Printf("Unable to process CloudFront log file: %s", s3File)
+			log.Printf("Error processing CloudFront log file %s: %v", s3File, err)
+			continue
 		}
 
 		log.Printf("Deleting CloudFront S3 log file: %s", s3File)
-
 		err = p.DeleteS3File(s3File)
-
 		if err != nil {
-			log.Printf("Unable to delete CloudFront S3 file after processing it: %s", err)
+			log.Printf("Error deleting CloudFront S3 file %s: %v", s3File, err)
+			continue
 		}
 	}
 }
